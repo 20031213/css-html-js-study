@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角</title>
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-color: pink;
+            /* border-radius:  30px; */
+            /* 顺时针旋转对应相应的值 */
+            border-radius: 40px 30px 20px 10px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .cycle {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: aquamarine;
+
+            /* 设置为圆形宽高的一半 */
+            /* border-radius: 100px; */
+            border-radius: 50%;
+        }
+
+        .capsule {
+            width: 1000px;
+            height: 100px;
+            margin: 150px auto;
+            background-color: yellow;
+            /* 给长方形盒子设置圆角属性值为盒子高度的一半 */
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">你好</div>
+    <div class="cycle">这是一个圆形</div>
+    <div class="capsule">这是一个胶囊</div>
+</body>
+</html>

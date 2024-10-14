@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        /* 
+            padding 内边距
+            border  边框线
+            margin  外边距
+        */
+        /* ----------边框线---------- */
+        /* 
+            属性值     条纹样式
+            solid      实线
+            dashed      虚线
+            dotted      点线
+        */
+        .div1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            border-top: 1px solid #000;
+            border-left: 1px dashed #000;
+            border-right: 10px dotted #000;
+            border-bottom: 1px solid #000;
+        }
+        /* ----------内边距---------- */
+        /* 
+            属性名：padding/padding-方位名词
+        */
+        .div2 {
+            width: 200px;
+            height: 200px;
+            background-color: #ff66;
+
+            /* padding-left: 10px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            padding-right: 10px; */
+            /* 顺时针的方向，上，右，下，左 */
+            padding: 10px 20px 40px 80px;
+
+            /* 内减模式：不需要手动减法，加padding和border不会撑大盒子 */
+            box-sizing: border-box;
+        }
+
+        .div3 {
+            /* 版心居中要求：盒子要有宽度 */
+            width: 200px;
+            height: 200px;
+            background-color: #ff61;
+            /* margin: 10px 10px 20px 50px; */
+            margin: 0 auto;
+        }
+        /* 外边距问题——合并现象 */
+        /* 
+            场景：垂直排列的兄弟元素，上下margin会合并
+            现象：取两个margin中较大的值生效
+        */
+        .divOne {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            margin-bottom: 60px;
+        }
+
+        .divTow {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            margin-top: 20px;
+        }
+
+        /* 盒子模型——阴影 */
+        /* 作用：给元素设置阴影效果 */
+        /* 
+            属性名：box—shadow
+            属性值：x，y偏移量 模糊半径 扩散半径 颜色 内外阴影
+        */
+        .shadow {
+            width: 110px;
+            height: 400px;
+            background-color: antiquewhite;
+            margin: auto;
+            /* 如果是内阴影则加inset,默认内阴影 */
+            box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">border标签</div>
+    <div class="div2">padding标签</div>
+    <div class="div3">margin标签</div>
+    <hr>
+    <div class="divOne">One</div>
+    <div class="divTow">Tow</div>
+    <div class="shadow">你好</div>
+</body>
+</html>

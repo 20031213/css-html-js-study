@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner效果</title>
+    <style>
+    div {
+        width:  2500px;
+        height: 1000px;
+        background-color: #f3f3f4;
+        color: rgb(42, 28, 10);
+        background-image: url(https://gd-hbimg.huaban.com/eb6f12e046a6582c11597c3e0d349fbf0a3db102efe85-jk5yyM_fw1200webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: right;
+        color: #3333;
+    }
+    div > h2 {
+        font-size: 360px;
+        font-weight: 400;
+        line-height: 100px;
+    }
+    div > p {
+        font-size: 100px;
+    }
+
+    div > a {
+    display: inline-block; /* 保持内联块级元素，以适应周围内容 */
+    background-color: #4CAF50; /* 选择一个更柔和的背景颜色 */
+    color: white; /* 设置文字颜色为白色，以提高对比度 */
+    width: 600px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none; /* 去除下划线 */
+    font-size: 60px;
+    line-height: 70px;
+    border-radius: 35px; /* 给链接添加圆角 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* 添加阴影效果 */
+    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+div > a:hover {
+    background-color: #45a049; /* 鼠标悬停时改变背景颜色 */
+    transform: translateY(-5px); /* 鼠标悬停时轻微上移 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* 鼠标悬停时增加阴影大小 */
+}
+
+div > a:active {
+    background-color: #397d3a; /* 点击时改变背景颜色 */
+    transform: translateY(2px); /* 点击时轻微下移 */
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h2>马库斯</h2>
+        <p>我们的马库斯是天下第一可爱的1999角色</p>
+        <a href="#">让我们成为韭批吧</a>
+    </div>
+</body>
+</html>

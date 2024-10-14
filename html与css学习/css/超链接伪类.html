@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接的伪类选择器</title>
+    <style>
+        /* 
+        超链接有四个状态，如果都要设置应该按照LVHA的顺序来写
+        选择器    作用
+        :link     访问前
+        :visited  访问后
+        :hover    鼠标悬停
+        :active   点击时（激活）
+        */
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: aqua;
+        }
+        a:hover {
+            color: azure;
+        }
+        a:active {
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://space.bilibili.com/24151861/favlist" target="_blank">a标签，调试伪类</a>
+</body>
+</html>

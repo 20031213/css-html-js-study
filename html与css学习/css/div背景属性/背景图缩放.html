@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图缩放</title>
+    <style>
+        /* 
+            作用：设置背景图大小
+            属性名：background-size(bgz)
+            常用属性值：
+            关键字
+                cover：等比例缩放背景图可以完全覆盖背景区，可能背景图片部分看不见
+                contain：等比例缩放背景图以完全装入背景区，可能背景区部分空白
+            百分比：根据盒子尺寸计算图片大小
+            数字+单位（如px）
+        */
+        div {
+            width: 600px;
+            height: 700px;
+            background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.1d057c262a8db29b3280d13dc0268c50?rik=pKgtpXl2YdLLgQ&riu=http%3a%2f%2fimg.weidown.com%2fuploadfile%2f2024%2f0320%2f20240320091915331.jpg&ehk=J3cYS4jxoYUl8y5KdYoq0Un2t4zWKbD2B96m4ZvDfPc%3d&risl=&pid=ImgRaw&r=0);
+            background-color: pink;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div>马库斯</div>
+</body>
+</html>

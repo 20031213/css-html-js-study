@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /*
+         后代选择器，选中子标签，包括孙子和曾孙子
+         写法：父选择器 （这里是空格）子选择器（css属性）父子之间用空格隔开
+        */
+        div p {
+            font-size: 50px;
+            font-family: 楷体;
+        }
+
+        div span {
+            font-size: 50px;
+            font-family: 楷体;
+        }
+    </style>
+</head>
+<body>
+    <p>你好</p>
+    <div>
+        <p>你好</p>
+        <h1>你好</h1>
+        <p>
+            <span>孙子 span</span>
+        </p>
+    </div>
+</body>
+</html>
